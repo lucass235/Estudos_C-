@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroPecas", "CadastroPecas\CadastroPecas.csproj", "{9AB34DC1-D196-43B8-83F9-6F2293FCCF26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoTriangulo", "ProjetoTriangulo\ProjetoTriangulo.csproj", "{46B75697-87B0-4067-B3ED-EA8295E8D829}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9AB34DC1-D196-43B8-83F9-6F2293FCCF26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AB34DC1-D196-43B8-83F9-6F2293FCCF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AB34DC1-D196-43B8-83F9-6F2293FCCF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AB34DC1-D196-43B8-83F9-6F2293FCCF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B75697-87B0-4067-B3ED-EA8295E8D829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B75697-87B0-4067-B3ED-EA8295E8D829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B75697-87B0-4067-B3ED-EA8295E8D829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B75697-87B0-4067-B3ED-EA8295E8D829}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1D09CFF0-500F-4087-8967-7AC5546516C3}
+		SolutionGuid = {8DC36360-6662-4AEA-875D-A0BA9F651973}
 	EndGlobalSection
 EndGlobal

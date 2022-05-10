@@ -4,6 +4,9 @@ namespace CadastroPecas // Note: actual namespace depends on the project name.
 {
     internal class Program {
         static void Main(string[] args) {
+
+            Triangulo x = new Triangulo(2, 4, 6);
+            Triangulo y = new Triangulo(2, 8, 10);
             Console.WriteLine("Digite a quantidade de peças: ");
             int qtd = int.Parse(Console.ReadLine());
             
