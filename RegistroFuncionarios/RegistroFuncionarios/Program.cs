@@ -11,7 +11,7 @@ namespace RegistroFuncionarios {
             double salarioFuncionario, porcentagem;
             Funcionario achouFuncionario;
 
-            Console.WriteLine("Bem vindo a empresa Direction Systems\n" +
+            Console.WriteLine("Bem vindo a Empresa Direction Systems\n" +
                 "====================================================");
 
             do {
@@ -90,7 +90,9 @@ namespace RegistroFuncionarios {
                     Console.Clear();
                 }
                 catch (Exception e) {
-                    Console.WriteLine("Erro: " + e);
+                    Console.WriteLine("Erro: " + e.Message);
+                    Console.ReadKey();
+                    Console.Clear();
                 }
 
             } while (opcao != '0');
@@ -108,6 +110,9 @@ namespace RegistroFuncionarios {
         }
 
         public static Funcionario buscarFuncionario(List<Funcionario> funcionarios, int id) {
+            if (id <= 0) {
+                throw new Exception("Id inválido!");
+            }
             foreach (Funcionario fun in funcionarios) {
                 if (fun.id == id) {
                     return fun;

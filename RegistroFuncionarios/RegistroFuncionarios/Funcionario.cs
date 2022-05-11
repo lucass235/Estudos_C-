@@ -27,7 +27,7 @@ namespace RegistroFuncionarios {
         }
 
         public override string ToString() {
-            return $"Funcinario: {this.id}\nNome: {this.nome}\n" +
+            return $"Funcionario: {this.id}\nNome: {this.nome}\n" +
                 $"Salário: {this.salario}\n";
         }
     }
