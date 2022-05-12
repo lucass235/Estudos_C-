@@ -122,6 +122,7 @@ namespace RegistroFuncionarios {
         }
 
         public static bool listaVazia(List<Funcionario> fun) {
+            
             return fun.Count == 0;
         }
 
