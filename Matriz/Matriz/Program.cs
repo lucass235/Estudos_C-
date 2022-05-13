@@ -87,7 +87,7 @@
 
         public static void menu() {
             Console.Write(" 1 - Ver matriz \n 2 - Ver Detalhes de 1 valor\n " +
-                " 0 - encerrar \n Digite a opção desejada: ");
+                "0 - encerrar \n Digite a opção desejada: ");
         }
         public static void exibirMatrix(int[,] matriz) {
             for (int i = 0; i < matriz.GetLength(0); i++) {
