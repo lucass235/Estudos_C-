@@ -1,16 +1,12 @@
 ﻿using OrdemDeServicos.Entites.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace OrdemDeServicos.Entites {
      class Order {
-        public DateTime moment { get; set; }
-        public OrderStatus status { get; set; }
+        public DateTime moment { get; private set; }
+        public OrderStatus status { get; private set; }
         public Cliente client { get; set; }
-        public List<OrderItem> items { get; set; }
+        public List<OrderItem> items { get; private set; }
 
         public Order(DateTime moment, OrderStatus status) {
             this.moment = moment;

@@ -22,7 +22,6 @@ namespace OrdemDeServicos {
                             break;
                         case '2':
                             gerencia.showOrdes();
-                           
                             break;
                         case '3':
                             Console.Write("Digite o tempo de segundos do pedido a ser finalizado: ");
@@ -81,7 +80,7 @@ namespace OrdemDeServicos {
             nameClient = Console.ReadLine();
             Console.Write("E-mail: ");
             email = Console.ReadLine();
-            Console.WriteLine("Data de aniversario: ");
+            Console.Write("Data de aniversario: ");
             dateBirth = DateTime.Parse(Console.ReadLine());
             Console.WriteLine("Digite o satus da comanda");
             status = Enum.Parse<OrderStatus>(Console.ReadLine());
@@ -89,24 +88,21 @@ namespace OrdemDeServicos {
             order = new Order(DateTime.Now, status);
             order.client = cliente;
             
-            Console.WriteLine("Digite a quantidade de pedidos que o cliente deseja: ");
+            Console.Write("Digite a quantidade de pedidos que o cliente deseja: ");
             qtdItems = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < qtdItems; i++) {
-                Console.Write("Digite o nome do produto: ");
+                Console.Write($"Digite o nome do {i+1}º pedido: ");
                 nameProduct = Console.ReadLine();
-                Console.Write("Digite o preço do produto: ");
+                Console.Write($"Digite o preço do {i+1}º pedido: ");
                 priceproduct = double.Parse(Console.ReadLine());
-                Console.Write("Digite a quantidade do produto: ");
+                Console.Write($"Digite a quantidade do {i+1}º pedido: ");
                 quantityProduct = int.Parse(Console.ReadLine());
                 product = new Product(nameProduct,priceproduct);
                 item = new OrderItem(quantityProduct,priceproduct,product);
-                Console.WriteLine($"Item: {item}");
                 order.addItem(item);
             }
             gerencia.addOrder(order);
-
-
         }
     }
 }

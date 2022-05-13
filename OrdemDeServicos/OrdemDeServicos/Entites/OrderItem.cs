@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace OrdemDeServicos.Entites {
      class OrderItem {
-        public int quantity { get; set; }
-        public double price { get; set; }
-        public Product product { get; set; }
+        public int quantity { get; private set; }
+        public double price { get; private set; }
+        public Product product { get; private set; }
 
         public OrderItem(int quantity, double price, Product product) {
             this.quantity = quantity;

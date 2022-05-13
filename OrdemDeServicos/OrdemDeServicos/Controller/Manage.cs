@@ -1,14 +1,9 @@
 ﻿using OrdemDeServicos.Entites;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace OrdemDeServicos.Controller {
     class Manage {
-        public List<Order> orders { get; set; }
-        public int quantityOrders { get; set; }
+        public List<Order> orders { get; private set; }
 
         public Manage() {
             this.orders = new List<Order>();
@@ -16,7 +11,6 @@ namespace OrdemDeServicos.Controller {
 
         public void addOrder(Order order) {
             orders.Add(order);
-            this.quantityOrders++;
         }
 
         public void removeOrder(DateTime moment) {
