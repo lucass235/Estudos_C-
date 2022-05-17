@@ -20,5 +20,4 @@ namespace Contribuinte.Entites {
             return $"{this.name}: R${this.tax()}";
         }
     }
-
 }

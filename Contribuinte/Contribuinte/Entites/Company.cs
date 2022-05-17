@@ -12,7 +12,6 @@ namespace Contribuinte.Entites {
             : base(name, anulincome) {
             this.numberOfEmployees = numberOfEmployees;
         }
-
         public override double tax() {
             return numberOfEmployees <= 10 ? this.anulincome * 0.16 : this.anulincome * 0.14;
         }

@@ -11,10 +11,8 @@ namespace Contribuinte {
 
             do {
                 try {
-
                     Console.Write("Digite a quantidade de pessoas a ser registradas: ");
                     qtd = int.Parse(Console.ReadLine());
-
                     for (int i = 0; i < qtd; i++) {
                         Console.Write("Irá registar um pessoa física (f) ou Júridica (j): ");
                         op = char.Parse(Console.ReadLine());
@@ -39,7 +37,6 @@ namespace Contribuinte {
                                 break;
                             default:
                                 throw new Exception("Opção inválida!");
-                                
                         }
                     }
                 }
@@ -47,9 +44,7 @@ namespace Contribuinte {
                     Console.WriteLine("Erro: " + ex.Message);
                     op = ' ';
                 }
-
             } while (op != 'j' && op != 'f');
-
 
             Console.WriteLine("Taxas: ");
             foreach (TaxPayer taxPayer in taxPayers) {
@@ -57,8 +52,6 @@ namespace Contribuinte {
                 Console.WriteLine(taxPayer);
             }
             Console.WriteLine($"Total de taxas: R${total}");
-
-
         }
     }
 }
