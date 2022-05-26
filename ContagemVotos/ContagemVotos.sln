@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContagemVotos", "ContagemVotos\ContagemVotos.csproj", "{6691F3F8-2617-4BCA-95A2-C6AEC6BA9B9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6691F3F8-2617-4BCA-95A2-C6AEC6BA9B9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6691F3F8-2617-4BCA-95A2-C6AEC6BA9B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6691F3F8-2617-4BCA-95A2-C6AEC6BA9B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6691F3F8-2617-4BCA-95A2-C6AEC6BA9B9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2592C9E-9A5A-40A9-9AB9-6E42F1002466}
+	EndGlobalSection
+EndGlobal
